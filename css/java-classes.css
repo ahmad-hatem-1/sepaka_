@@ -1,0 +1,162 @@
+.loding {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+    cursor: wait;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.finish_loding {
+    transition: backdrop-filter .3s, opacity 0.3s;
+    opacity: 0;
+    display: none;
+    backdrop-filter: blur(100px);
+
+}
+
+
+.finish_blur_loding {
+    transition: filter 0.5s;
+    filter: blur(0);
+}
+
+.nav_i_style_scroll:not(:last-child) {
+    border-left: 1px solid #000;
+}
+
+.nav_i_style_scroll {
+    color: #000;
+}
+
+.nav_a_active_have {
+    color: #00c6ff;
+    border-left: 6px solid #00c6ff;
+    padding: 5px 20px;
+
+}
+
+.transform-and-opactie-return {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.logo_h2_scroll {
+    color: white;
+    padding: 5px 8px 10px 20px;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    border-radius: 10px;
+}
+
+.hdr_scroll {
+    position: sticky;
+    background: #fff;
+    box-shadow: 0 1px 5px #111;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.61);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    font-family: Tajawal;
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #00c6ff;
+    border-right: 3px solid #00c6ff;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+.ring span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.ring span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    ;
+    top: -px;
+    right: -8px;
+    box-shadow: 0 0 20px blue;
+}
+
+.go_top {
+    position: sticky;
+    z-index: 200;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0 3%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    bottom: 50px;
+}
+
+.go_top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to left, rgb(0, 114, 255), rgb(0, 198, 255));
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.scale-animation {
+    display: block !important;
+    animation: scale-animation 1s .3s 1 forwards alternate !important;
+}
+
+.to-top-animation {
+    animation: to-top-animation 5s 1 forwards;
+}
+.hidden {
+
+}
