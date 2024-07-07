@@ -131,7 +131,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin: 0 auto 0 3%;
+    margin: 0 3% 0 auto;
     cursor: pointer;
     transition: opacity 0.3s;
     bottom: 50px;

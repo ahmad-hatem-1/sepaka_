@@ -48,7 +48,13 @@
 .waves__container{
     position: absolute;
     width: 100%;
-    top: 0;
+    top: -9%;
+}
+@media (max-width:768px){
+    .waves__container{
+        top: -2%;
+    }
+
 }
 .waves {
     position:relative;
